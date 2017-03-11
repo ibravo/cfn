@@ -1,0 +1,50 @@
+foreman-installer \
+--enable-foreman \
+--enable-foreman-cli \
+--enable-foreman-compute-ec2 \
+--enable-foreman-compute-libvirt \
+--enable-foreman-compute-openstack \
+--enable-foreman-compute-ovirt \
+--enable-foreman-compute-vmware \
+--enable-foreman-compute-rackspace \
+--enable-foreman-compute-gce \
+--enable-foreman-plugin-ansible \
+--enable-foreman-plugin-azure \
+--enable-foreman-plugin-cockpit \
+-- enable-foreman-plugin-expire-hosts
+enable-foreman-plugin-docker
+enable-foreman-plugin-discovery
+enable-foreman-plugin-digitalocean
+enable-foreman-plugin-dhcp-browser
+enable-foreman-plugin-openscap
+enable-foreman-plugin-tasks
+--enable-foreman-proxy \
+enable-foreman-proxy-plugin-ansible
+--foreman-proxy-dhcp=true \
+--foreman-proxy-dhcp-gateway="192.168.6.151" \
+--foreman-proxy-dhcp-interface="eth1" \
+--foreman-proxy-dhcp-range="192.168.6.160 192.168.6.200" \
+--foreman-proxy-tftp=true \
+--foreman-proxy-tftp-servername="192.168.6.151" \
+--foreman-proxy-dns=true \
+--foreman-proxy-dns-forwarders "192.168.6.151" \
+--foreman-proxy-dns-interface="eth1" \
+--foreman-proxy-dns-managed=true \
+--foreman-proxy-dns-reverse="6.168.192.in-addr.arpa" \
+--foreman-proxy-dns-zone=“lab" \
+foreman-admin-password=“5ecret" \
+
+
+
+
+
+--foreman-configure-epel-repo \
+--foreman-unattended \
+--enable-foreman-plugin-discovery \
+--foreman-plugin-discovery-install-images=true 
+
+--foreman-proxy-puppetca \
+--foreman-proxy-puppetrun \
+--foreman-proxy-register-in-foreman \
+--puppet-server
+
