@@ -30,10 +30,14 @@ foreman-installer \
 --foreman-proxy-dns-forwarders "10.23.177.1" \
 --foreman-proxy-dns-interface="em2" \
 --foreman-proxy-dns-managed=true \
---foreman-proxy-dns-zone=“lab" \
---foreman-admin-password=“5ecret" \
---foreman-unattended=true \
+--foreman-proxy-dns-zone="lab" \
+--foreman-admin-password="5ecret" \
+--foreman-configure-epel-repo \
+--foreman-unattended \
 --enable-foreman-plugin-discovery \
---foreman-plugin-discovery-install-images=true \
+--foreman-plugin-discovery-install-images \
+--foreman-proxy-puppetca \
+--foreman-proxy-puppetrun \
+--foreman-proxy-register-in-foreman \
 --puppet-server
 
