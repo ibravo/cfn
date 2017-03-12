@@ -32,12 +32,9 @@ foreman-installer \
 --foreman-proxy-dns-managed=true \
 --foreman-proxy-dns-zone="lab" \
 --foreman-admin-password="5ecret" \
---foreman-configure-epel-repo \
---foreman-unattended \
+--foreman-configure-epel-repo=true \
+--foreman-unattended=true \
 --enable-foreman-plugin-discovery \
---foreman-plugin-discovery-install-images \
---foreman-proxy-puppetca \
---foreman-proxy-puppetrun \
---foreman-proxy-register-in-foreman \
+--foreman-plugin-discovery-install-images=true \
 --puppet-server
 
